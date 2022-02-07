@@ -1,0 +1,26 @@
+@import '../../styles/mixin';
+
+.homeBg {
+  position: absolute;
+  @include cover;
+  background-image: url('https://wallpaper.dog/large/5486500.png');
+  background-size: cover;
+}
+
+.title {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: italic;
+  animation: text 0.5s linear;
+}
+
+@keyframes text {
+  0% {
+    transform: translateX(-100vw);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

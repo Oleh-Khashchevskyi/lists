@@ -1,13 +1,22 @@
+@import './styles/reset';
+@import './styles/vars';
+@import './styles/mixin';
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #eee;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main {
+  // min-height: calc(100vh - $footerHeight - $headerHeight);
+  min-height: calc(100vh - 130px);
+  padding: 100px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+
+  @include onMobile {
+    padding: 40px 0;
+  }
 }

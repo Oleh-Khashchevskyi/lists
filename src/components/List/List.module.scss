@@ -1,0 +1,26 @@
+@import '../../styles/mixin';
+
+.loader {
+  cursor: pointer;
+
+  & th {
+    transition: color 0.3s;
+  }
+
+  & th:hover {
+    color: #666;
+  }
+}
+
+
+
+@include onMobile {
+  .column1,
+  .column3 {
+    display: none;
+  }
+
+  .column2 {
+    width: 100%;
+  }
+}
